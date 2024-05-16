@@ -77,3 +77,10 @@ download_nfwg <- function(sub_folder = ""){
                 extra = options(timeout = 200)) 
 }
 
+no_na <- function(x) {
+  if (is.na(x)) {
+    return(0)
+  } else {
+    return(x)
+  }
+}
